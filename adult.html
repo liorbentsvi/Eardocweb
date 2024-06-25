@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="utf-8" />
+    <title>EardocLearn-Adults</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/styles.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="jScripts/javascript.js"></script>
+
+<!-- spline -->
+<!-- Remove this when import maps will be widely supported -->
+<script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script> 
+
+  
+  <!-- Module script tags -->
+  <script type="module" src="./src/main.js"></script>
+  
+
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.6.7/build/spline-viewer.js"></script>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+ 
+ 
+</head>
+
+<body>
+    <nav>
+        <button id="nav-button" class="btn-mobile hide" onclick="toggleNavBar()">&#9776;</button>
+        <div id="mobile-nav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="toggleNavBar()">&times;</a>
+            <a href="./Homepage.html">דף הבית</a>
+            <a href="./swimmers.html">שוחה</a>
+
+            <a href="./adult.html">בגיל השלישי</a>
+            <a href="./doctorPage.html">רופא/ה</a>
+            <a href="./travlerPage.html">טס/ה</a>
+            <a href="./kidsPage.html">הורים וילדים/ות</a>
+            <a href="./about.html">אודת</a>
+        </div>
+    
+        <ul id="main-nav" class="flex-container-nav hide-mobile">
+            <li><a href="./Homepage.html"><img src="images/Eardoclogo.png" alt="EardocLogo" style="width: 74%;"></a></li>
+            <li><a href="./swimmers.html">שוחה</a></li>
+            <li><a href="./adult.html">בגיל השלישי</a></li>
+            <li><a href="./doctorPage.html">רופא/ה</a></li>
+            <li><a href="./travlerPage.html">טס/ה</a></li>
+            <li><a href="./kidsPage.html">הורים וילדים/ות</a></li>
+        </ul>
+    </nav>
+
+ <main>
+   
+    <ul class="flex-container-opening-adults"> 
+        <li>
+            <h1 style="color: grey">
+אני בגיל השלישי
+            </h1>
+          <p class="main-text">
+            הגעת לאתר הדרכה של האירדוק, מכשיר שעוזר בהקלה על כאבים באוזניים. כאן אפשר למצוא מידע מקיף על האירדוק שמותאם במיוחד בשבילך. ניתן להשתמש מגיל 10 ומעלה.
+        </p>
+            </li>
+            <li >
+                <img src="images/adultCat.png" alt="מבוגר/ת" class="chosenCat-image-ad">
+    
+            </li>
+    </ul>     
+
+
+
+   
+    
+<br>
+
+
+
+
+
+<ul class="flex-container-main-doc">
+    <li class="doc-med"> 
+    
+        <button class="accordion">  טינטון באוזניים</button>
+    <div class="panel">
+    
+      <p> 
+        מצב זה גורם לתחושת רעשים באוזניים, כמו צלצולים או זמזום. טינטון יכול להיגרם על ידי חשיפה לרעשים חזקים, אובדן שמיעה, שימוש מסוים בתרופות, או מצבים רפואיים אחרים
+        </p>    
+</div>
+    </li>
+    
+    
+    <li class="doc-med"> 
+    
+        <button class="accordion"> דלקת אוזן חיצונית </button>
+        <div class="panel">
+          <p>
+            דלקת זו פוגעת בתעלת האוזן החיצונית, הנקראת גם תעלת השמע. התסמינים כוללים כאב, אדמומיות, נפיחות, הפרשות מהאוזן, וירידה בשמיעה.
+
+          </p> 
+        </div>
+        </li>
+    
+    
+        <li class="doc-med">     
+            <button class="accordion"> דלקת אוזן תיכונה</button>
+            <div class="panel">
+              <p> 
+                דלקת זו פוגעת באוזן התיכונה, חלל קטן מאחורי עור התוף. גורמים: חיידקיים, נגיפיים ואלרגיים. התסמינים כוללים כאב אוזניים, התכווצות אוזניים, ירידה בשמיעה, הפרשות מהאוזן, וסחרחורת
+            </p> 
+                   </div>
+        </li>
+    
+    
+    </ul> 
+
+
+
+
+
+
+    <div class="viewer-container-introdocs">
+        <h2 style="text-align: center; color: grey;">נא להכיר: מכשיר האירדוק</h2>
+        <p style="text-align: center;">
+            אפשר לסובב את המכשיר וללחוץ על הנקודות השונות
+            כדי להכיר את מבנה האירדוק
+        </p>
+    
+    </div>
+    
+
+     
+<div class="viewer-container-introdocs">
+  <spline-viewer url="https://prod.spline.design/ZLYMYqtWQTpyAkEn/scene.splinecode"></spline-viewer></div>
+
+</div>
+
+<div class="viewer-container-introdoc-mobile">
+    <spline-viewer loading-anim-type="spinner-small-dark" url="https://prod.spline.design/uxNgOBS9igxyPndK/scene.splinecode"></spline-viewer>
+
+</div>
+
+
+
+<br>
+
+
+
+
+<br>
+<div class="viewer-container-main">
+</div>
+
+
+
+
+
+
+<h2 style="text-align: center; color: grey;">כעת נלמד איך לתפעל את האירדוק צעד אחר צעד</h2>
+<br>
+
+
+
+
+<div class="viewer-container-main">
+  <spline-viewer url="https://prod.spline.design/f9VQueIp9pTsflY4/scene.splinecode"></spline-viewer>
+</div>
+
+    <div class="viewer-container-kids-mobile">
+      <spline-viewer url="https://prod.spline.design/w2bf1q87xbgf6dbF/scene.splinecode">
+
+      </spline-viewer>      </div>
+
+
+
+
+
+<br>
+
+
+  <!-- Module script tags -->
+  <script type="module" src="./src/main.js"></script>
+ </main>
+
+
+
+
+
+    <!-- Footer section -->
+
+
+
+    <footer class="footer">
+        
+
+      <ul class="footer__nav">
+
+          
+        <li class="nav__item">
+          <h2 class="nav__title">זאת ועוד </h2>
+    
+          <ul class="nav__ul">
+ 
+              
+    
+           <li>
+               <a href="./Homepage.html">דף הבית</a>
+           </li>
+     
+
+           <li>
+              <a href="./about.html">אודות   </a>
+          </li>
+
+
+           <li>
+              <a href="https://www.eardoc.store/">אתר אירדוק הרשמי </a>
+          </li>
+          
+          </ul>
+        </li>
+
+
+          
+        <li class="nav__item">
+          <h2 class="nav__title">למי האירדוק מתאים</h2>
+    
+          <ul class="nav__ul">
+            <li>
+              <a href="./doctorPage.html">רופא/ה</a>
+            </li>
+    
+            <li>
+              <a href="./kidsPage.html">הורים וילדים/ות</a>
+            </li>
+                
+            <li>
+              <a href="./swimmers.html">שוחה</a>
+            </li>
+
+            <li>
+              <a href="./travlerPage.html"> טס/ה</a>
+            </li>
+
+
+            <li>
+              <a href="./adult.html">בגיל השלישי</a>
+            </li>
+          </ul>
+        </li>
+
+
+
+
+
+      </ul>
+      
+    </footer>
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,514 @@
+﻿<!doctype html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="utf-8" />
+    <title>EardocLearnHomepage</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/styles.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="jScripts/javascript.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./styles/bootstrap.rtl.min.css">
+    <script src="jScripts/bootstrap.bundle.js"></script>
+   
+   
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vimeo Video Embed</title>
+    
+</head>
+
+<body>
+   
+    
+    <nav>
+        <button id="nav-button" class="btn-mobile hide" onclick="toggleNavBar()">&#9776;</button>
+        <div id="mobile-nav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="toggleNavBar()">&times;</a>
+            <a href="./Homepage.html">דף הבית</a>
+            <a href="./swimmers.html">שוחה</a>
+
+            <a href="./adult.html">בגיל השלישי</a>
+            <a href="./doctorPage.html">רופא/ה</a>
+            <a href="./travlerPage.html">טס/ה</a>
+            <a href="./kidsPage.html">הורים וילדים/ות</a>
+            <a href="./about.html">אודת</a>
+        </div>
+    
+        <ul id="main-nav" class="flex-container-nav hide-mobile">
+            <li><a href="./Homepage.html"><img src="images/Eardoclogo.png" alt="EardocLogo" style="width: 74%;"></a></li>
+            <li><a href="./swimmers.html">שוחה</a></li>
+            <li><a href="./adult.html">בגיל השלישי</a></li>
+            <li><a href="./doctorPage.html">רופא/ה</a></li>
+            <li><a href="./travlerPage.html">טס/ה</a></li>
+            <li><a href="./kidsPage.html">הורים וילדים/ות</a></li>
+        </ul>
+    </nav>
+    
+      
+   
+<main>
+
+<ul class="flex-container-opening">
+<li>
+
+    <h1>
+מה נשמע?    </h1>
+            
+
+   <p class="main-text"> זהו אתר הלמידה של המכשיר אירדוק- כאן ניתן ללמוד
+מהו האירדוק, איך הוא עובד, ואיך להשתמש בו.
+תוכל/י לצפות במידע המתאים לך, בהתאם לפרופיל הנבחר.
+   </p> 
+
+           
+</li>
+
+<li >
+    <div class="responsive-iframe-container">
+<iframe src="https://player.vimeo.com/video/965704643?h=88eb873027&amp;app_id=122963" width="1280" height="720" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="מהו האירדוק">
+    
+</iframe>    
+
+</div>
+</li>
+
+
+            
+</ul>     
+
+
+
+<br>
+<br>
+<br>
+
+
+
+            <div class="list-wrapper" >
+                <p style="text-align: center;">בשביל שנוכל להתאים לך את ההדרכה באופן אישי, בחר/י את האפשרות המתאימה לך</p>
+                <ul class="list">
+    
+                    <li class="item">
+                        <div class="content">     
+                            <img src="images/doctorIcon.png" alt="רופא/ה" class="Icon-image-Doc" onclick="navigateToDoctorPage() ">
+</div>
+                    </li>
+
+                    <li class="item">
+                        <div class="content">
+                            <img src="images/kidsparents-cat.png" alt="ילד/ה" class="Icon-image-Kid" onclick="navigatToKidsPage() ">
+                        </div>
+                    </li>
+                  
+
+                    <li class="item">
+                        <div class="content">
+                          
+                            <img src="images/travlerIcon.png" alt="טס.ה" class="Icon-image-Fly"  onclick="navigatToFlightersPage() ">
+                        </div>
+                    </li>
+
+                    <li class="item">
+                        <div class="content">
+                          
+                            <img src="images/swimmericon.png" alt="שחייני/ות" class="Icon-image-Sw" onclick="navigatToSwimmersPage() ">
+                        </div>
+                    </li>
+                  
+                    <li class="item">
+                        <div class="content">
+                         
+                            <img src="images/Adulticon.png" alt="מבוגר/ת" class="Icon-image-Ad" onclick="navigatToAdultsPage() ">
+                        </div>
+                    </li>
+                  
+
+            
+                </ul>
+                 <button onclick="handleClick('previous')" class="button button--previous" type="button"> &#8250;</button> 
+                <button onclick="handleClick('next')" class="button button--next" type="button"> &#8249;</button>
+            </div>
+
+
+
+         <!-- המלצות מהעולם -->
+<br>
+
+<h2 style="text-align: center;" id="recommendations-section">המלצות מהעולם</h2>
+        <p style="text-align: center;">לחיצה על המיקום תחשוף סרטון המלצה מאותו אזור בעולם</p>
+<br>
+<div class="map-container">
+    <img src="images/map.png" alt="מפת העולם" class="map">
+    
+    <img src="images/loce.png" alt="Israel" class="hotspot israel" onclick="showPopup('Israel')">
+    <img src="images/loce.png" alt="United Kingdom" class="hotspot uk" onclick="showPopup('UK')">
+    <img src="images/loce.png" alt="United States" class="hotspot us" onclick="showPopup('US')">
+    <img src="images/loce.png" alt="North Dakota" class="hotspot nd" onclick="showPopup('ND')">
+    <img src="images/loce.png" alt="Hawaii" class="hotspot hawaii" onclick="showPopup('Hawaii')">
+    <img src="images/loce.png" alt="Asia" class="hotspot asia" onclick="showPopup('Asia')">
+</div>
+
+
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <button type="button" class="btn-close" aria-label="Close" onclick="closePopup()" style="margin-left: 100%;"></button>
+        <div class="flex-container-popup">
+            <h2 id="popup-title"></h2>
+             <img id="popup-flag" src="" alt="Country flag" class="flag">
+        </div>
+        <iframe id="video-iframe" src="" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+</div>
+
+
+
+
+<br>
+
+
+<h2 style="text-align: center;">למי אסור להשתמש באירדוק? </h2>
+
+<div class="flip-card-container">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="images/restrictions-allergies.png" alt="אייקון אלרגיות" class="allergies-icon" >
+          <p style="text-align: center;"> אלרגיות לחומרים</p>
+        </div>
+        <div class="flip-card-back">
+       
+          <p>
+            מטופלים ומטופלות עם אלרגיות ידועות ללטקס או סיליקון, חומרים העלולים להימצא במכשיר האירדוק, צריכים להימנע משימוש בו כדי למנוע תגובות אלרגיות.
+          </p> 
+      
+        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="images/restrictions-emergency.png" alt="אייקון מצבים אוטולוגים חמורים" class="emergency-icon">
+          <p style="text-align: center;"> מצבים אוטולוגים חמורים </p>
+
+        </div>
+        <div class="flip-card-back">
+          
+          <p>
+            מטופלים ומטופלות עם מצבים אוטולוגיים חמורים או תסמינים הדורשים התערבות רפואית או כירורגית לא צריכים להשתמש באירדוק כתחליף לטיפול מקצועי.
+        </p> 
+         
+        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="images/restrictions-surgery.png" alt="אייקון ניתוח או טראומה באוזן" class="surgery-icon">
+          <p style="text-align: center;">    ניתוח או טראומה באוזן </p>
+        </div>
+        <div class="flip-card-back">
+      
+          <p>מטופלים ומטופלות שעברו ניתוח אוזן צריכים להתייעץ עם הרופא המטפל שלהם לפני השימוש באירדוק, מכיוון שהשימוש בו עלול להיות לא מתאים או מזיק בתהליך הריפוי.</p>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="images/restrictions-perforation.png" alt="אייקון נקבים בעור התוף" class="perforation-icon">
+          <p style="text-align: center;"> נקבים בעור התוף    </p>
+
+        </div>
+        <div class="flip-card-back">
+
+          <p>מטופלים ומטופלות עם נקבים או חשד לחורים בתופית האוזן לא צריכים להשתמש באירדוק, מכיוון שהרטטים עלולים לגרום לגירוי נוסף או לפגיעה באוזן.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+<br>
+
+<h2 style="text-align: center;">שאלות נפוצות</h2>
+         <p style="text-align: center;">לחיצה על החץ תחשוף את התשובה</p>
+<div class="accordion" id="accordionExample">
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button  collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                כמה פעמים ביום ניתן להשתמש באירדוק?
+            </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <strong>ניתן להשתמש באירדוק עד 3 פעמים ביום</strong>
+                כאשר כל טיפול נמשך 3-5 דקות לכל אוזן. חשוב לא לחרוג מהמלצות שימוש אלו.
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                האם ניתן להשתמש באירדוק על ילדים וילדות?
+            </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <strong>כן, אירדוק מתאים לילדים/ות אך יש להשתמש בו בהשגחת מבוגר/ת. </strong>
+                יש להקפיד תמיד על הנחיות הבטיחות ולהתייעץ עם רופא/ה במקרה של ספק.
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                האם אירדוק יעיל לכל סוגי כאבי האוזניים?
+            </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <strong>אירדוק נועד להקל על אי נוחות הקשור למצבים כמו דלקת אוזן תיכונה, גודש באוזניים וליקוי בתפקוד חצוצרה האוסטאכיוס. </strong>
+                ייתכן שהוא לא יהיה יעיל לכל בעיות האוזניים, ומומלץ להתייעץ עם גורם מקצועי רפואי לצורך אבחון וטיפול מתאימים.
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                האם ניתן להעביר את האירדוק בין משתמשים ומשתמשות שונים?
+            </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <strong>שיתוף האירדוק אפשרי במידת הצורך</strong>, אך חובה לנקות ולחטא היטב את המכשיר לפני כדי למנוע הדבקה הדדית.
+            </div>
+        </div>
+    </div>
+    
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                מה עליי לעשות אם אני חווה אי נוחות בזמן השימוש באירדוק?
+            </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <strong>אם חווית אי נוחות, יש להפסיק את השימוש במכשיר באופן מיידי ולכנוון את עוצמת הרטט.</strong> יש להתייעץ עם גורם מקצועי רפואי אם אי הנוחות נמשכת.
+            </div>
+        </div>
+    </div>
+
+
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+               מה לעשות אם המכשיר לא נדלק?
+            </button>
+        </h2>
+        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                1. יש להחליף את הסוללות AA.
+                <br>
+                2. יש לוודא כי הסוללה מותקנת בצורה נכונה.
+                <br>
+                3. יש לבדוק שלחצן ההדלקה של המכשיר פועל כראוי.
+            </div>
+        </div>
+    </div>
+
+    <!-- Accordion item 2 -->
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSeven">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+מה לעשות אם עוצמת הרטט חלשה מדי בשבילי?
+            </button>
+        </h2>
+        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                 1. ניתן להגביר את עוצמת הרטט בהדרגה עד למציאת הרמה הרצויה באמצעות כפתור ההדלקה.
+                
+                <br>
+                2. יש לבדוק שקצה הסיליקון מחובר כראוי ותקין.
+                <br>
+                3. יש לוודא שהמכשיר אינו חסום או מוחזק בצורה לא נכונה.
+
+                <br>
+                4. יש להחליף את הסוללות AA של המכשיר.
+
+            </div>            
+        
+        </div>
+
+        </div>
+   
+
+    <!-- Accordion item 3 -->
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingEight">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+        	מה לעשות אם המכשיר מתחמם יתר על המידה?           
+        </button>
+        </h2>
+        <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+1.	יש להפסיק את השימוש באופן מיידי אם המכשיר מתחמם יתר על המידה בצורה לא נוחה.                
+                <br>
+                2. יש לתת למכשיר להתקרר ואז לבדוק סימני תקלה או נזק.
+                <br>
+                3. יש ליצור קשר עם היצרן אם החימום ממשיך.
+
+        
+            </div>
+        </div>
+    </div>
+
+    <!-- Accordion item 4 -->
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingNine">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+       מה לעשות אם יש רעש חריג במהלך הפעולה?                 
+        </button>
+        </h2>
+        <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                .זמזום קל הוא תקין, אך אם המכשיר מפיק רעש חריג או חזק, יש להפסיק את השימוש ולבדוק אם יש רכיבים רופפים או פגומים                <br>
+                יש לתת למכשיר להתקרר ואז לבדוק סימני תקלה או נזק.
+                <br>
+                יש להתייעץ עם היצרן או עם טכנאי מקצועי אם הרעש החריג ממשיך.
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+</div>
+
+<br>
+<div class="fda-icon">
+ <img src="images/fda-icon.png" alt="אישור של משרד הבריאות" class="fda-icon">
+</div>
+
+<br>
+
+
+<div class="centered">
+    <img src="images/eardoc-web-icon.png" alt="אייקון אירדוק" class="web-icon">
+
+    <div class="eardoc-web-icon">
+        <div class="content">
+            <div class="text">
+                <h2>לאתר הרשמי של האירדוק</h2>
+                <a href="https://www.eardoc.store/" class="button-link">
+                    <button> לחצו כאן</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+</main>
+
+
+
+    <!-- Footer section -->
+    
+    
+
+
+
+    <footer class="footer">
+        
+
+        <ul class="footer__nav">
+
+            
+          <li class="nav__item">
+            <h2 class="nav__title">זאת ועוד </h2>
+      
+            <ul class="nav__ul">
+   
+                
+      
+             <li>
+                 <a href="./Homepage.html">דף הבית</a>
+             </li>
+       
+
+             <li>
+                <a href="./about.html">אודות   </a>
+            </li>
+
+
+             <li>
+                <a href="https://www.eardoc.store/">אתר אירדוק הרשמי </a>
+            </li>
+            
+            </ul>
+          </li>
+
+
+            
+          <li class="nav__item">
+            <h2 class="nav__title">למי האירדוק מתאים</h2>
+      
+            <ul class="nav__ul">
+              <li>
+                <a href="./doctorPage.html">רופא/ה</a>
+              </li>
+      
+              <li>
+                <a href="./kidsPage.html">הורים וילדים/ות</a>
+              </li>
+                  
+              <li>
+                <a href="./swimmers.html">שוחה</a>
+              </li>
+
+              <li>
+                <a href="./travlerPage.html"> טס/ה</a>
+              </li>
+
+
+              <li>
+                <a href="./adult.html">בגיל השלישי</a>
+              </li>
+            </ul>
+          </li>
+
+
+
+
+
+        </ul>
+        
+      </footer>
+
+
+
+    
+</body>
+
+</html>
