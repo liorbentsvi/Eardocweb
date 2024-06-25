@@ -1905,6 +1905,11 @@ display: none;
 
 
 @media (max-width: 600px) {
+
+
+    .viewer-container-earanatomy{
+        display:none;
+    }
     .viewer-container-earanatomy h2{
         font-size: 1rem;
     }
