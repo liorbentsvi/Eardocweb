@@ -26,7 +26,7 @@ font-family: 'Assistant-Light';
 /* תפריט ניווט עליון*/
 
 .sidenav {
-    text-align: center;
+    text-align: right;
     height: 100%;
     width: 0;
     position: fixed;
@@ -39,7 +39,7 @@ font-family: 'Assistant-Light';
 }
 
 .sidenav a {
-    padding: 17px 8px 8px 32px;
+   padding: 24px 16px 8px 32px;
     text-decoration: none;
     font-size: 25px;
     color: #818181;
@@ -54,7 +54,7 @@ font-family: 'Assistant-Light';
 .sidenav .closebtn {
     position: absolute;
     top: 0;
-    right: 25px;
+
     font-size: 36px;
     margin-left: 50px;
 }
