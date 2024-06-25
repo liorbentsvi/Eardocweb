@@ -1966,7 +1966,9 @@ display: none;
 }
 
 @media only screen and  (max-width: 600px) {
-
+.viewer-container-introdocs{
+    display:none;
+}
     .viewer-container-introdoc-mobile{
         display: flex;
         flex-direction: column;
